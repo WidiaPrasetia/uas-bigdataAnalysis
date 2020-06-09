@@ -14,7 +14,7 @@ case = ['Kasus', 'Sembuh', 'Kematian']
 prov = (test.iloc[:, 0])
 df2 = test.groupby(test.iloc[:, 0]).agg('mean')
 df2.plot(kind='bar')
-plt.title('Data Nasional COVID-19 di Indoensia dengan Kasus Kematian terendah per tanggal 1 Juni 2020', fontsize=10)
+plt.title('Data Nasional COVID-19 di Indonesia dengan Kasus Kematian terendah per tanggal 1 Juni 2020', fontsize=10)
 plt.xticks(rotation='horizontal')
 plt.xlabel('Provinsi(10 paling rendah)', labelpad=20, fontsize=15)
 # plt.legend(bbox_to_anchor=(1,1))
